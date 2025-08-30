@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Quantity and Cost</title>
+</head>
+<body>
+
+  <button onclick="
+    quantity++;
+    cost1 = quantity * 5;
+    document.getElementById('coffeeDisplay').innerHTML = `Coffee: ${quantity} × $5 = $${cost1}`;
+  ">Coffee</button>
+
+  <button onclick="
+    quantity1++;
+    cost2 = quantity1 * 3;
+    document.getElementById('bagelDisplay').innerHTML = `Bagels: ${quantity1} × $3 = $${cost2}`;
+  ">Bagels</button>
+
+  <button onclick="
+    quantity2++;
+    cost3 = quantity2 * 9;
+    document.getElementById('soupDisplay').innerHTML = `Soup: ${quantity2} × $9 = $${cost3}`;
+  ">Soup</button>
+
+  <button onclick="
+    total = cost1 + cost2 + cost3;
+    document.getElementById('totalDisplay').innerHTML = `Total Food Cost: $${total}`;
+  ">Total</button>
+
+  <!-- Display Sections -->
+  <div id="coffeeDisplay"></div>
+  <div id="bagelDisplay"></div>
+  <div id="soupDisplay"></div>
+  <div id="totalDisplay"></div>
+
+  <script>
+    let quantity = 0;
+    let quantity1 = 0;
+    let quantity2 = 0;
+    let cost1 = 0;
+    let cost2 = 0;
+    let cost3 = 0;
+    let total = 0;
+  </script>
+
+</body>
+</html>
